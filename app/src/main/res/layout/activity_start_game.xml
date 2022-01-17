@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Game.StartGameActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="@string/choose"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_black"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="224dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/black"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btn_red"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_black"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="91dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/red"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btn_green"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/green"
+        android:textSize="35sp" />
+</RelativeLayout>

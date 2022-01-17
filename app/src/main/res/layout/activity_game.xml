@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Game.GameActivity">
+
+
+    <ImageView
+        android:id="@+id/ryletka"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/casino" />
+
+    <ImageView
+        android:id="@+id/strelka"
+        android:layout_width="142dp"
+        android:layout_height="131dp"
+        android:layout_above="@+id/ryletka"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp"
+        app:srcCompat="@drawable/arrow" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ryletka"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="73dp"
+        android:backgroundTint="@color/btn"
+        android:text="@string/play"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+</RelativeLayout>
